@@ -2,13 +2,13 @@
 # docker build -t svtconnect -f svtconnect.Dockerfile . 
 # docker run -i -p 9091:9091 --name svtconnect svtconnect
 # User Ubuntu as the base Image
-FROM ubuntu
+FROM ubuntu:18.04
 #
 LABEL maintainer="Hewlett Packard Enterprise"
 LABEL version="1.0"
 LABEL copyright="Hewlett Packard Enterprise, 2019"
 LABEL license="GNU General Public License v3"
-LABEL DESCRIPTION="CTC SimpliVity Pythone container based on Ubuntu"
+LABEL DESCRIPTION="CTC SimpliVity Python container based on Ubuntu"
 # Install Python 3.6
 RUN apt-get update
 RUN apt-get -y install python3.6 && \
